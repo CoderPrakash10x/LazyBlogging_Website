@@ -1,0 +1,101 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(to right, #d4fcf8, #f5f5fa, #ece8fa);
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.logoIcon {
+  color: #7f4ef3;
+  font-weight: bold;
+  margin-right: 8px;
+  font-size: 1.4rem;
+}
+
+.logoText {
+  font-weight: 600;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem; 
+  width: 100%;
+  max-width: 300px;
+}
+
+
+.menuToggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navLinks {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.right .rightLinks {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.subscribe {
+  color: #7f4ef3;
+  font-weight: 600;
+}
+
+.searchIcon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .navLinks {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .activeMenu {
+    display: flex;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .right .rightLinks {
+    display: none;
+  }
+}
