@@ -51,6 +51,7 @@ export default function Home() {
         <div className={styles.rightcontent}>
           <h4>How to Learn Javascript in 2025?</h4>
           <p>Javascript is A scripting Language .......</p>
+         
         </div>
 
         <div className={styles.rightcontent}>
